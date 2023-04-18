@@ -46,13 +46,13 @@ function desencriptarTexto(texto) {
   texto = txt;
 
   if (validarEntrada(txt)) {
-    let encriptado = texto.replace(/enter/g, "e");
-    encriptado = encriptado.replace(/imes/g, "i");
-    encriptado = encriptado.replace(/ai/g, "a");
-    encriptado = encriptado.replace(/ober/g, "o");
-    encriptado = encriptado.replace(/ufat/g, "u");
-    document.getElementById("resultado").innerHTML = encriptado;
-    return encriptado;
+    let desencriptado = texto.replace(/enter/g, "e");
+    desencriptado = desencriptado.replace(/imes/g, "i");
+    desencriptado = desencriptado.replace(/ai/g, "a");
+    desencriptado = desencriptado.replace(/ober/g, "o");
+    desencriptado = desencriptado.replace(/ufat/g, "u");
+    document.getElementById("resultado").innerHTML = desencriptado;
+    return desencriptado;
   }
 }
 
