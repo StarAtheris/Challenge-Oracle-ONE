@@ -14,7 +14,11 @@ function hiddencontent(show){
 }
 
 function validarEntrada(txt) {
-    if (txt.length !== 0) {
+
+  const regex = /^[a-z\s]*$/; 
+
+
+    if (txt.length !== 0 && regex.test(txt)) {
         hiddencontent("none");
         mostrarresultado("block");
       return true;
