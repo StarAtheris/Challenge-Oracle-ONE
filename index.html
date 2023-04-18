@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encryptor & Decryptor - Jaider Timana @staratheris</title>
+</head>
+<body>
+    <div class="contenido">
+        <div>
+            <header>
+                <img src="imgs/Logo.svg" alt="Logo de Alura en color azul y letra latina" id="logoalura">
+                
+            </header>
+        </div>
+        <main>
+            <section class="encrypt">
+                <textarea id="encryptinput" placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode == 32 || event.charCode >= 97 && event.charCode <= 122 ) "></textarea>
+            </section>
+
+            <div class="advertising">
+                <img src="imgs/Vector.svg" alt="">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <section class="box-buttons">
+                <button id="encrypt-bt">Encriptar</button>
+                <button id="decrypt-bt">Desencriptar</button>
+            </section>
+
+            <section class="classbox">
+                <section id="mostraresultado">
+                    <div class="resultado" class="1">
+                        <textarea readonly id="resultado" cols="0" rows="0" placeholder=""></textarea>
+                    </div>
+                    <div id="buttondiv"><button id="copiarbt">COPIAR</button></div>
+                </section>
+
+                <section id="box-content">
+                    <img src="imgs/Muñeco.svg" alt="personaje con un diamante de color azul" id="muñeco">
+                    <div class="text-rec">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p >Ingrese el texto que desee encriptar o desencriptar</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+</div>
+    <script src="js/index.js"></script>
+</body>
+</html>
