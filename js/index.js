@@ -22,12 +22,17 @@ function validarEntrada(txt) {
         hiddencontent("none");
         mostrarresultado("block");
       return true;
-    } else {
-      alert("¡Debe ingresar texto para procesar!");
+    } 
+    
+    
+    else {
+      alert("¡Debe ingresar texto con los requerimientos sugeridos!");
       hiddencontent("");
       mostrarresultado("none");
       return false;
+      
     }
+    
 }
 
 function encriptarTexto(texto) {
