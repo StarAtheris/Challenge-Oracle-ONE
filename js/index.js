@@ -5,11 +5,11 @@ const buttonencrypt = document.getElementById("encrypt-bt");
 const buttondecrypt = document.getElementById("decrypt-bt")
 const mostraresultado = document.getElementById("mostraresultado");
 
-function mostrarresultado(show) {
+function mostrarResultado(show) {
     return mostraresultado.style.display = show;
 }
 
-function hiddencontent(show){
+function hiddenContent(show){
     return boxContent.style.display = show;
 }
 
@@ -19,16 +19,16 @@ function validarEntrada(txt) {
 
 
     if (txt.length !== 0 && regex.test(txt)) {
-        hiddencontent("none");
-        mostrarresultado("block");
+        hiddenContent("none");
+        mostrarResultado("block");
       return true;
     } 
     
     
     else {
       alert("¡Debe ingresar texto con los requerimientos sugeridos!");
-      hiddencontent("");
-      mostrarresultado("none");
+      hiddenContent("");
+      mostrarResultado("none");
       return false;
       
     }
