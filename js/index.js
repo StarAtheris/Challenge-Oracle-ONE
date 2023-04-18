@@ -31,11 +31,11 @@ function encriptarTexto(texto) {
     texto = txt;
 
     if (validarEntrada(txt)) {
-      let encriptado = texto.replace(/e/g, "enter");
-      encriptado = encriptado.replace(/i/g, "imes");
-      encriptado = encriptado.replace(/a/g, "ai");
-      encriptado = encriptado.replace(/o/g, "ober");
-      encriptado = encriptado.replace(/u/g, "ufat");
+      let encriptado = texto.replace(/e/gi, "enter");
+      encriptado = encriptado.replace(/i/gi, "imes");
+      encriptado = encriptado.replace(/a/gi, "ai");
+      encriptado = encriptado.replace(/o/gi, "ober");
+      encriptado = encriptado.replace(/u/gi, "ufat");
       document.getElementById("resultado").innerHTML = encriptado;
       return encriptado;
     }
@@ -46,11 +46,11 @@ function desencriptarTexto(texto) {
   texto = txt;
 
   if (validarEntrada(txt)) {
-    let desencriptado = texto.replace(/enter/g, "e");
-    desencriptado = desencriptado.replace(/imes/g, "i");
-    desencriptado = desencriptado.replace(/ai/g, "a");
-    desencriptado = desencriptado.replace(/ober/g, "o");
-    desencriptado = desencriptado.replace(/ufat/g, "u");
+    let desencriptado = texto.replace(/enter/gi, "e");
+    desencriptado = desencriptado.replace(/imes/gi, "i");
+    desencriptado = desencriptado.replace(/ai/gi, "a");
+    desencriptado = desencriptado.replace(/ober/gi, "o");
+    desencriptado = desencriptado.replace(/ufat/gi, "u");
     document.getElementById("resultado").innerHTML = desencriptado;
     return desencriptado;
   }
