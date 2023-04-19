@@ -14,23 +14,16 @@ function hiddenContent(show){
 }
 
 function validarEntrada(txt) {
-
   const regex = /^[a-z\s]*$/; 
-
-
     if (txt.length !== 0 && regex.test(txt)) {
         hiddenContent("none");
         mostrarResultado("block");
       return true;
-    } 
-    
-    
-    else {
+    } else {
       alert("¡Debe ingresar texto con los requerimientos sugeridos!");
       hiddenContent("");
       mostrarResultado("none");
       return false;
-      
     }
     
 }
