@@ -29,8 +29,7 @@ body {
 #encryptinput {
     position: absolute;
     display: block;
-    width: 40%;
-
+    width: 70%;
     height: 50%;
     left: 240px;
     top: 168px;
